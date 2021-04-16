@@ -38,12 +38,12 @@ uri = 'mongodb+srv://new_use:5TAnapiwTBJhkUf@cluster0.gaeaz.mongodb.net/register
 
 class MyEchoAction(Action):
     def run(self, data):
-        print(data)
-        myclient = MongoClient(uri)
-        db = myclient["stackstorm"]
-        Collection = db["sensorData"]
+        return(data)
+        # myclient = MongoClient(uri)
+        # db = myclient["stackstorm"]
+        # Collection = db["sensorData"]
 
-        if data:
-            Collection.insert_one(data)
-        return (False, "No Data")
+        
+        # Collection.insert_one(data)
+        # return (False, "No Data")
 
