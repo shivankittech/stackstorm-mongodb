@@ -10,17 +10,17 @@ from st2common.runners.base_action import Action
 
 
 class MyEchoAction(Action):
-    def run(self, data, uri):
+    def run(self, data, databaseId,  uri):
 
         myclient = MongoClient(uri)
         db = myclient["stackstorm"]
-        collection = "it's working"
+        collection = db["sensorData"]
                 
-        # collection.find_one_and_update(
-        #     {"_id" : ObjectId(databaseId)},
-        #         {"$set":data},
-        #         upsert=True
-        #     )
-        
-        return (True, collection)
+        collection.find_one_and_update(
+            {"_id" : ObjectId(databaseId)},
+                {"$set":data},
+                upsert=True
+            )
+
+        return (True, uri)
 

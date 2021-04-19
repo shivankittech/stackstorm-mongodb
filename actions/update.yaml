@@ -3,16 +3,16 @@ name: "update"
 runner_type: "python-script"
 description: "Insert data into a mongoDB database"
 enabled: true
-entry_point: "actionFile.py"
+entry_point: "updata.py"
 parameters:
     data:
       type: "object"
       description: ""
       required: true
-    # databaseId:
-    #   type: "string"
-    #   description : "Databse id"
-    #   required: true
+    databaseId:
+      type: "string"
+      description : "Databse id"
+      required: true
     uri:
       type: "string"
       description: "authentication and connection link"

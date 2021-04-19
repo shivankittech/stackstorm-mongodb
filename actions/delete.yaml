@@ -3,10 +3,10 @@ name: "delete"
 runner_type: "python-script"
 description: "Insert data into a mongoDB database"
 enabled: true
-entry_point: "actionFile.py"
+entry_point: "delete.py"
 parameters:
     id:
-      type : "string"
+      type: "string"
       description : "Database id"
       required: true
       position: 0
