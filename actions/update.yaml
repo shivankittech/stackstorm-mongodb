@@ -9,10 +9,10 @@ parameters:
       type: "object"
       description: ""
       required: true
-    databaseId:
-      type: "string"
-      description : "Databse id"
-      required: true
+    # databaseId:
+    #   type: "string"
+    #   description : "Databse id"
+    #   required: true
     uri:
       type: "string"
       description: "authentication and connection link"
