@@ -9,3 +9,7 @@ parameters:
         type: "object"
         description: ""
         required: true
+    uri:
+      type: "string"
+      description: "authentication and connection link"
+      default: null

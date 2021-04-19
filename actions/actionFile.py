@@ -33,11 +33,11 @@ import dns
 from st2common.runners.base_action import Action
 
 
-uri = 'mongodb+srv://new_use:5TAnapiwTBJhkUf@cluster0.gaeaz.mongodb.net/register?retryWrites=true&w=majority'
+
 
 
 class MyEchoAction(Action):
-    def run(self, data):
+    def run(self, data, uri):
 
         myclient = MongoClient(uri)
         db = myclient["stackstorm"]

@@ -13,3 +13,7 @@ parameters:
       type : "string"
       description : "Databse id"
       required: true
+    uri:
+      type: "string"
+      description: "authentication and connection link"
+      default: null
