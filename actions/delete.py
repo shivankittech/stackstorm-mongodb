@@ -11,7 +11,7 @@ from st2common.runners.base_action import Action
 
 
 class MyEchoAction(Action):
-    def run(self, data, id, uri):
+    def run(self, id, uri):
 
         myclient = MongoClient(uri)
         db = myclient["stackstorm"]
