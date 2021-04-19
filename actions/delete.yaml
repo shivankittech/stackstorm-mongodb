@@ -1,5 +1,5 @@
 pack : "mongodb"
-name: "insert"
+name: "delete"
 runner_type: "python-script"
 description: "Insert data into a mongoDB database"
 enabled: true
