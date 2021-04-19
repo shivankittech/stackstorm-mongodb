@@ -9,7 +9,7 @@ parameters:
         type: "object"
         description: ""
         required: true
-    id:
+    iD:
       type : "string"
       description : "Databse id"
       required: true
