@@ -14,13 +14,13 @@ class MyEchoAction(Action):
 
         myclient = MongoClient(uri)
         db = myclient["stackstorm"]
-        collection = db["sensorData"]
+        collection = "it's working"
                 
         # collection.find_one_and_update(
         #     {"_id" : ObjectId(databaseId)},
         #         {"$set":data},
         #         upsert=True
         #     )
-
-        return (True, uri)
+        
+        return (True, collection)
 
