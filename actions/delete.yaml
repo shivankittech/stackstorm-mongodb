@@ -1,0 +1,15 @@
+pack : "mongodb"
+name: "insert"
+runner_type: "python-script"
+description: "Insert data into a mongoDB database"
+enabled: true
+entry_point: "actionFile.py"
+parameters:
+    data:
+        type: "object"
+        description: ""
+        required: true
+    id:
+      type : "string"
+      description : "Databse id"
+      required: true
