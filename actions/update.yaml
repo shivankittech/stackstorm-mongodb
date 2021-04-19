@@ -6,10 +6,10 @@ enabled: true
 entry_point: "actionFile.py"
 parameters:
     data:
-        type: "object"
-        description: ""
-        required: true
-    iD:
+      type: "object"
+      description: ""
+      required: true
+    databaseId:
       type: "string"
       description : "Databse id"
       required: true
