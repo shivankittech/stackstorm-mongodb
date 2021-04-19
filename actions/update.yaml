@@ -3,7 +3,7 @@ name: "update"
 runner_type: "python-script"
 description: "Insert data into a mongoDB database"
 enabled: true
-entry_point: "updata.py"
+entry_point: "update.py"
 parameters:
     data:
       type: "object"
