@@ -7,8 +7,9 @@ entry_point: "actionFile.py"
 parameters:
     id:
       type : "string"
-      description : "Databse id"
+      description : "Database id"
       required: true
+      position: 0
     uri:
       type: "string"
       description: "authentication and connection link"
