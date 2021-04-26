@@ -9,12 +9,14 @@ from st2common.runners.base_action import Action
 
 
 
-class MyEchoAction(Action):
-    def run(self, data, databaseId,  uri):
+class MongoUpdateAction(Action):
+    def run(self, data, databaseId, uri, collectionDatabase):
 
+        database = uri.split("/")[3].split("?")[0]
+        
         myclient = MongoClient(uri)
-        db = myclient["stackstorm"]
-        collection = db["sensorData"]
+        db = myclient[database]
+        collection = db[collectionDatabase]
                 
         collection.find_one_and_update(
             {"_id" : ObjectId(databaseId)},

@@ -12,4 +12,8 @@ parameters:
     uri:
       type: "string"
       description: "authentication and connection link"
-      default: null
+      default: true
+    collectionDatabase:
+        type: string
+        description: "collection of database to store data into"
+        required: true

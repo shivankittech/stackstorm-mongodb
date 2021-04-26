@@ -6,5 +6,18 @@ trigger_types:
   -
     name: "event1"
     description: "An example trigger."
+    parameters_schema:
+      type: "object"
+        properties:
+          uri:
+            description: "connection string of mongodb"
+            type: "string"
+            required: true
+          collection:
+            description: "collection of database to store ata into"
+            type: "string"
+            required: true
+        additionalProperties: false
     payload_schema:
       type: "object"
+    
