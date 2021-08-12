@@ -7,7 +7,7 @@ from st2common.runners.base_action import Action
 
 
 
-# mongodb+srv://new_use:5TAnapiwTBJhkUf@cluster0.gaeaz.mongodb.net/register?retryWrites=true&w=majority
+
 
 class MongoInsetAction(Action):
     def run(self, data, uri, collectionDatabase):
